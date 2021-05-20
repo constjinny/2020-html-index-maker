@@ -2,7 +2,7 @@
 
 ## URL
 
-https://constjinny.github.io/2020-htmlIndexMaker/
+https://constjinny.github.io/2020-html-index-maker/
 
 ## 목적
 
@@ -34,11 +34,13 @@ https://constjinny.github.io/2020-htmlIndexMaker/
 │  │  ├─index.js
 │  │  └─result.js
 │  │
-│  └─page
+│  └─pages
 │       └─resultPage.html
 │
 ├─ index.html
-└─ README.md
+├─ README.md
+│
+└─ test
 ```
 
 ### 스킬
