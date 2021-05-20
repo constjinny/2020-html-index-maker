@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC, M) 프로젝트명</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #ebebeb;
+      }
+      .screen_out {
+        overflow: hidden;
+        position: absolute;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        text-indent: -9999px;
+      }
+      .header {
+        height: 72px;
+        margin: 0 auto;
+        background-color: #6d9ebb;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      .header h1 {
+        float: left;
+        margin: 0 0 0 15px;
+        font-weight: 100;
+        font-size: 24px;
+        line-height: 73px;
+        color: #fff;
+      }
+      .content {
+        padding: 0 30px;
+      }
+      .box {
+        max-width: 1550px;
+        margin: 20px auto 0;
+        padding: 30px 15px;
+        border-radius: 15px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: #fafbff;
+      }
+      .box .box_info {
+        display: flex;
+      }
+      .box .box_info dt {
+        font-weight: bold;
+      }
+      .box .box_info dd {
+        margin: 0 0 0 6px;
+      }
+      .box .box_info a {
+        color: #000;
+      }
+      table {
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: collapse;
+        border: 1px solid #6d9ebb;
+        table-layout: fixed;
+        word-break: break-all;
+        word-wrap: break-word;
+      }
+      table caption {
+        padding: 0 0 20px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+      }
+      table th:first-child,
+      table td:first-child {
+        border-left: 0;
+      }
+      table th,
+      table td {
+        border-left: 1px solid #6d9ebb;
+        line-height: 20px;
+        word-break: keep-all;
+      }
+      table th {
+        padding: 15px 10px 13px;
+        font-size: 16px;
+        background-color: #c2dbeb;
+      }
+      table td {
+        padding: 15px 10px 13px;
+        border-top: 1px solid #6d9ebb;
+        font-size: 14px;
+      }
+      table tr:hover td {
+        background-color: transparent;
+      }
+      table tr:hover td:not([rowspan]) {
+        background-color: #f2f6ff;
+      }
+      .btn_top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 200px;
+        max-width: 1588px;
+        margin: 20px auto 0;
+        padding: 10px 0;
+        border: 0 none;
+        border-radius: 15px;
+        background-color: #6d9ebb;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+      }
+      .btn_top:hover {
+        background-color: #3b6d8a;
+      }
+      .btn_top span {
+        display: block;
+        margin-top: 5px;
+        font-size: 12px;
+      }
+    </style>
+    <script type="text/javascript" src="../js/result.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>PC, M) 프로젝트명</h1>
+    </div>
+    <div class="content">
+      <div class="box">
+        <dl class="box_info">
+          <dt>바로가기 :</dt>
+          <dd>
+            <a
+              href="https://github.com/constjinny/2020_indexMaker"
+              target="_blank"
+              >https://github.com/constjinny/2020_indexMaker</a
+            >
+          </dd>
+        </dl>
+        <dl class="box_info">
+          <dt>바로가기 :</dt>
+          <dd>
+            <a
+              href="https://github.com/constjinny/2020_indexMaker"
+              target="_blank"
+              >https://github.com/constjinny/2020_indexMaker</a
+            >
+          </dd>
+        </dl>
+      </div>
+      <div class="box">
+        <h2 class="screen_out">프로젝트 리스트</h2>
+        <table class="tbl_index">
+          <caption>
+            PC) 프로젝트명
+          </caption>
+          <colgroup>
+            <col style="width: 10%" />
+            <col style="width: 10%" />
+            <col style="width: 10%" />
+            <col style="width: 10%" />
+            <col />
+            <col style="width: 20%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>1 Depth</th>
+              <th>2 Depth</th>
+              <th>3 Depth</th>
+              <th>4 Depth</th>
+              <th>URL</th>
+              <th>비고</th>
+            </tr>
+          </thead>
+          <tbody id="view">
+            <tr>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+              <td>
+                <a
+                  href="https://github.com/constjinny/2020_indexMaker"
+                  target="_blank"
+                  class="link_preview"
+                  >${datail}</a
+                >
+              </td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <button type="button" class="btn_top">맨 위로</button>
+    </div>
+    <script></script>
+  </body>
+</html>

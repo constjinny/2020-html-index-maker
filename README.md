@@ -1,4 +1,4 @@
-# 2020_indexMaker
+# 2020-indexMaker
 
 ## 목적
 
