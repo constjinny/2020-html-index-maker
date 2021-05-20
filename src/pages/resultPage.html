@@ -108,10 +108,17 @@
 
       const showPreview = (event) => {
         const { target, offsetX, offsetY } = event;
-        const getUrl = target?.attributes["href"]?.value;
+        const getHrefValue = target?.attributes["href"]?.value;
+        const hasBasicUrl =
+          getHrefValue.match("http:/") || getHrefValue.match("https:/");
+        const currentBasicUrl = window.location.origin;
+        const getUrl = hasBasicUrl
+          ? getHrefValue
+          : `${currentBasicUrl}/${getUrl}`;
+
         const option = {
           ...iframeOption,
-          viewUrl: getUrl,
+          viewUrl: getHrefValue,
           viewX: offsetX,
           viewY: offsetY,
         };
