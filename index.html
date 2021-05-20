@@ -4,100 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IndexMaker</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #ebebeb;
-      }
-      input[type="text"] {
-        border-radius: 15px;
-        border: 1px solid #ccc;
-        border-radius: 15px;
-        outline: 0 none;
-      }
-      .header {
-        height: 72px;
-        margin: 0 auto;
-        background-color: #6d9ebb;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      }
-      .header h1 {
-        float: left;
-        margin: 0 0 0 15px;
-        font-weight: 100;
-        font-size: 24px;
-        line-height: 73px;
-        color: #fff;
-      }
-      .content {
-        padding: 0 30px;
-      }
-      .box {
-        max-width: 1550px;
-        margin: 20px auto 0;
-        padding: 20px 15px 18px;
-        border-radius: 15px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        background-color: #fafbff;
-      }
-      .box .box_info {
-        margin-top: 10px;
-        padding: 10px 15px 18px;
-        border-radius: 15px;
-        border: 1px solid #ccc;
-        border-radius: 15px;
-        background-color: #fff;
-        font-size: 14px;
-      }
-      .box .box_info em {
-        font-style: normal;
-      }
-      .box label {
-        display: block;
-        width: 100%;
-        font-weight: bold;
-      }
-      .box input[type="text"],
-      .box input[type="file"] {
-        display: block;
-        width: calc(100% - 20px);
-        height: 30px;
-        margin-top: 10px;
-        padding: 0 10px;
-      }
-      .box p {
-        margin: 10px 0 0;
-      }
-      #submitButton {
-        display: block;
-        width: 100%;
-        max-width: 1588px;
-        margin: 20px auto 0;
-        padding: 10px 0;
-        border: 0 none;
-        border-radius: 15px;
-        background-color: #6d9ebb;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        font-size: 18px;
-        color: #fff;
-        cursor: pointer;
-      }
-      #submitButton:hover {
-        background-color: #3b6d8a;
-      }
-      #submitButton span {
-        display: block;
-        margin-top: 5px;
-        font-size: 12px;
-      }
-    </style>
+    <title>HtmlIndexMaker</title>
+    <link rel="stylesheet" type="text/css" href="./src/assets/css/index.css" />
     <script type="text/javascript" src="./src/js/index.js"></script>
   </head>
   <body>
     <div class="header">
-      <h1>IndexMaker</h1>
+      <h1>HtmlIndexMaker</h1>
     </div>
     <div class="content">
       <div class="box">
@@ -145,13 +58,7 @@
           />
         </label>
       </div>
-      <button type="submit" id="submitButton">
-        추출하기
-        <span
-          >( 추출 후 사용하실 index.html 내 'notice' 주석 확인 바랍니다. 미
-          제거시 프리뷰 기능이 실행되지 않아요. )</span
-        >
-      </button>
+      <button type="submit" id="submitButton">추출하기</button>
     </div>
   </body>
 </html>

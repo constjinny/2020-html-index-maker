@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ebebeb;
+}
+input[type="text"] {
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  outline: 0 none;
+}
+.header {
+  height: 72px;
+  margin: 0 auto;
+  background-color: #6d9ebb;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.header h1 {
+  float: left;
+  margin: 0 0 0 15px;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 73px;
+  color: #fff;
+}
+.content {
+  padding: 0 30px;
+}
+.box {
+  max-width: 1550px;
+  margin: 20px auto 0;
+  padding: 20px 15px 18px;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fafbff;
+}
+.box .box_info {
+  margin-top: 10px;
+  padding: 10px 15px 18px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #fff;
+  font-size: 14px;
+}
+.box .box_info em {
+  font-style: normal;
+}
+.box label {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+}
+.box input[type="text"],
+.box input[type="file"] {
+  display: block;
+  width: calc(100% - 20px);
+  height: 30px;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+.box p {
+  margin: 10px 0 0;
+}
+#submitButton {
+  display: block;
+  width: 100%;
+  max-width: 1588px;
+  margin: 20px auto 0;
+  padding: 10px 0;
+  border: 0 none;
+  border-radius: 15px;
+  background-color: #6d9ebb;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+#submitButton:hover {
+  background-color: #3b6d8a;
+}
+#submitButton span {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+}
