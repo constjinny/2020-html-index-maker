@@ -2,6 +2,7 @@ window.onload = function () {
   const parameterRule = /(params.get)\(['"](.*?)['"]\)/g;
   const submitButton = document.getElementById("submitButton");
 
+  // utill
   const checkingExcept = (depth, except) =>
     except.filter((target) => depth.includes(target));
 
@@ -11,6 +12,7 @@ window.onload = function () {
     return result;
   };
 
+  // 2-4. 데이터 정렬 및 불필요 파일 제거
   const createOutputData = (datas, filesData) => {
     if (datas.except.length) {
       const except = datas.except;
@@ -26,8 +28,10 @@ window.onload = function () {
     }
   };
 
+  // 2. 파일 데이터 읽기
   async function readFileData(inputData) {
     const resultFilesData = [];
+    // 2-1. 데이터 가공
     const newFileData = Object.values(inputData.files).map(async (file) => {
       if (file.type === "text/html") {
         const fileData = {
@@ -37,6 +41,7 @@ window.onload = function () {
           depth: file.webkitRelativePath.split("/"),
         };
 
+        // 2-3. parameter check
         const readParameterInFile = await new Promise((resolve) => {
           if (inputData.option === true) {
             const reader = new FileReader();
@@ -75,6 +80,7 @@ window.onload = function () {
     return result;
   }
 
+  // 1. submit 버튼 클릭시 입력 값 체크
   submitButton.addEventListener("click", async () => {
     localStorage.clear();
     const parameterOption = document.getElementById("parameterOption").checked;
@@ -96,9 +102,10 @@ window.onload = function () {
       alert("파일을 확인해주세요.");
     } else {
       try {
+        // 3. 출력
         const resultFileList = await readFileData(inputData);
         localStorage.setItem("urlList", JSON.stringify(resultFileList));
-        window.open("index.html");
+        window.open("./src/page/resultPage.html");
       } catch (err) {
         alert("에러 발생. 다시 실행해주세요.");
         console.log("err", err);

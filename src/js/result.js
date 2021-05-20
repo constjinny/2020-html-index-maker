@@ -29,7 +29,7 @@ function loadUrlList() {
     });
   };
 
-  console.log(urlList);
+  console.log("urlList", urlList);
   urlList.map((data) => {
     detailUrl(data);
   });
