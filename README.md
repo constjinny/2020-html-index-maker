@@ -1,5 +1,7 @@
 # 2020-indexMaker
 
+## https://constjinny.github.io/2020_indexMaker/
+
 ## 목적
 
 1. html 파일를 확인 후 파라미터 체크, 제외 파일 여부를 필터링한 뒤 url data를 추출
