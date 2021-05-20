@@ -1,6 +1,7 @@
 # 2020-indexMaker
 
-## https://constjinny.github.io/2020_indexMaker/
+## URL
+https://constjinny.github.io/2020_indexMaker/
 
 ## 목적
 
