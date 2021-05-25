@@ -1,10 +1,10 @@
 # htmlIndexMaker
 
-## URL
+## 🔗 URL
 
 https://constjinny.github.io/2020-html-index-maker/
 
-## 목적
+## 📌 목적
 
 1. 인덱스 툴을 통해 목록 생성에 소비되는 시간을 50% 이상 단축
 
@@ -18,7 +18,7 @@ https://constjinny.github.io/2020-html-index-maker/
 
 3. preview 기능을 제공하여, 불필요한 페이지 이동을 줄임
 
-## 개발
+## 🛠 개발
 
 ### 구조
 
@@ -35,7 +35,7 @@ https://constjinny.github.io/2020-html-index-maker/
 │  │  └─result.js
 │  │
 │  └─pages
-│       └─resultPage.html
+│       └─result.html
 │
 ├─ index.html
 ├─ README.md
@@ -43,12 +43,12 @@ https://constjinny.github.io/2020-html-index-maker/
 └─ test
 ```
 
-### 스킬
+### 테크셋
 
 - ES6
 - HTML/CSS
 
-## 사용 가이드
+## 💁🏽‍♀️ 사용 가이드
 
 ### STEP1
 

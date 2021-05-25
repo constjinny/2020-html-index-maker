@@ -105,7 +105,7 @@ window.onload = function () {
         // 3. 출력
         const resultFileList = await readFileData(inputData);
         localStorage.setItem("urlList", JSON.stringify(resultFileList));
-        window.open("./src/pages/resultPage.html");
+        window.open("./src/pages/result.html");
       } catch (err) {
         alert("에러 발생. 다시 실행해주세요.");
         console.log("err", err);
