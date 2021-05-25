@@ -52,7 +52,7 @@ https://constjinny.github.io/2020-html-index-maker/
 
 ### main
 
-![step01] (./src/assets/images/step01.png)
+![step01](https://constjinny.github.io/2020-html-index-maker/src/assets/images/step01.png)
 | value | value |info|EX|`주의`|
 | :-- | :-- |:--|:--|:--|
 |분기 포함 여부 | check |파일 내의 선언된 파라미터를 추가해 리스트 제작|.../src/indexMaker/mainPage.html`?type1`||
@@ -65,15 +65,15 @@ https://constjinny.github.io/2020-html-index-maker/
 
 ### result
 
-![step02] (./src/assets/images/step02.png)
+![step02](https://constjinny.github.io/2020-html-index-maker/src/assets/images/step02.png)
 
 - 인덱스 페이지에 입력데이터에서 추출된 url이 입력됩니다.
 - 디테일한 정보는 수정해서 사용해주세요. (ex. depth의 명칭 등)
 
 ## 예시 영상
 
-![testing] (./src/assets/videos/testing.mov)
+[![test](https://img.youtube.com/vi/gVq4TVyCRyQ/0.jpg)](https://youtu.be/gVq4TVyCRyQ)
 
 ## 테스트 파일
 
-[testFile] (./test/files/test.zip)
+[testFile](./test/files/test.zip)
