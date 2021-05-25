@@ -50,9 +50,9 @@ https://constjinny.github.io/2020-html-index-maker/
 
 ## 💁🏽‍♀️ 사용 가이드
 
-### STEP1
+### main
 
-img1
+![step01] (./src/assets/images/step01.png)
 | value | value |info|EX|`주의`|
 | :-- | :-- |:--|:--|:--|
 |분기 포함 여부 | check |파일 내의 선언된 파라미터를 추가해 리스트 제작|.../src/indexMaker/mainPage.html`?type1`||
@@ -63,13 +63,17 @@ img1
 |제외폴더/파일명 |mainFolder, index.html, adminFolder...|인덱스로 제작하고 싶지 않은/불필요한 폴더와 파일 명을 입력|||
 | 업로드폴더`(필수입력)`| |인덱스로 제작할 폴더를 업로드||해당 툴은 .html 확장자만을 체크|
 
-### STEP2
+### result
 
-img2
+![step02] (./src/assets/images/step02.png)
 
 - 인덱스 페이지에 입력데이터에서 추출된 url이 입력됩니다.
 - 디테일한 정보는 수정해서 사용해주세요. (ex. depth의 명칭 등)
 
 ## 예시 영상
 
+![testing] (./src/assets/videos/testing.mov)
+
 ## 테스트 파일
+
+[testFile] (./test/files/test.zip)
