@@ -77,3 +77,7 @@ https://constjinny.github.io/2020-html-index-maker/
 ## 📁 테스트 파일
 
 [testFile](./test/files/test.zip)
+
+## 🙏🏻 TODO
+- git api 연결
+- 체크되는 파라미터 룰 변경
