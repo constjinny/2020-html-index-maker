@@ -1,4 +1,4 @@
-# htmlIndexMaker
+# html-index-maker
 
 ## 🔗 URL
 
@@ -70,10 +70,10 @@ https://constjinny.github.io/2020-html-index-maker/
 - 인덱스 페이지에 입력데이터에서 추출된 url이 입력됩니다.
 - 디테일한 정보는 수정해서 사용해주세요. (ex. depth의 명칭 등)
 
-## 예시 영상
+## 📹 예시 영상
 
 [![test](https://img.youtube.com/vi/gVq4TVyCRyQ/0.jpg)](https://youtu.be/gVq4TVyCRyQ)
 
-## 테스트 파일
+## 📁 테스트 파일
 
 [testFile](./test/files/test.zip)
