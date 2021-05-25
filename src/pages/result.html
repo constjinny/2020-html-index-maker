@@ -75,7 +75,7 @@
       const iframeOption = {
         viewWidth: 400,
         viewHeight: 400,
-        viewScale: 1,
+        viewScale: "0.5",
         viewUrl: "",
         viewX: null,
         viewY: null,
@@ -85,9 +85,14 @@
         const { viewWidth, viewHeight, viewScale, viewUrl, viewX, viewY } =
           option;
         const preview = document.createElement("div");
-        const iframeEl = `<iframe id="popupView" src="${viewUrl}" frameborder="0" scrolling="no" style="position:absolute;top:${viewX}px;left:${viewY}px;z-index:9999;width:${viewWidth}px;height:${viewHeight}px;-webkit-transform:scale(${viewScale});transform: scale(${viewScale});-webkit-transform-origin:top left;transform-origin:top left;background:#fff;border-radius:10px;box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.18), 0 4px 10px 0 rgba(0, 0, 0, 0.27), 0 16px 40px 0 rgba(85, 92, 107, 0.4)"></iframe>`;
+        const iframeEl = `<iframe id="popupView" src="${viewUrl}" frameborder="0" scrolling="no" style="position:absolute;top:${viewX}px;left:${viewY}px;z-index:9999;width:${viewWidth}px;height:${viewHeight}px;-webkit-transform:scale(1);transform: scale(1);-webkit-transform-origin:top left;transform-origin:top left;background:#fff;border-radius:10px;box-shadow:0 0 4px 0 rgba(0, 0, 0, 0.18), 0 4px 10px 0 rgba(0, 0, 0, 0.27), 0 16px 40px 0 rgba(85, 92, 107, 0.4)"></iframe>`;
         preview.innerHTML = iframeEl;
         iframeWrap.appendChild(preview);
+        iframeWrap
+          .querySelector("#popupView")
+          .contentWindow.document.querySelector(
+            "body"
+          ).style.transform = `scale(${viewScale})`;
       };
 
       const showPreview = (event) => {

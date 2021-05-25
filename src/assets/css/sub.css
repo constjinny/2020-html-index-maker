@@ -83,7 +83,7 @@ table tr:hover td {
 table tr:hover td:not([rowspan]) {
   background-color: #f2f6ff;
 }
-#popupView body {
+#popupView {
   transform: scale(0.5);
 }
 .btn_top {
